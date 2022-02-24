@@ -82,9 +82,9 @@ const Home: NextPage = () => {
       </div>
       <div className="w-1/2 float-left h-full text-xl text-white p-8 relative">
         <p className="text-center opacity-50 text-2xl">Mari</p>
-        <p className="text-center">{mariValue}</p>
+        <p className="text-center">{mariValue?.toFixed(2)} Gold/Item</p>
         <p className="text-center mt-8 opacity-50 text-2xl">Market</p>
-        <p className="text-center">{marketValue}</p>
+        <p className="text-center">{marketValue?.toFixed(2)} Gold/Item</p>
 
         <div className="w-full absolute bottom-10 left-0">
           <p className="text-center w-full opacity-50 text-2xl">Result</p>
