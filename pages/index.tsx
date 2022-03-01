@@ -16,6 +16,7 @@ const Input = ({ name }: { name: string }) => {
     <input
       type="text"
       name={name}
+      defaultValue={name == "mariItemCount" ? 95 : ""}
       className="rounded w-8/12 p-2 pl-4 pr-4 outline-none"
     />
   );
@@ -24,7 +25,7 @@ const Input = ({ name }: { name: string }) => {
 const Home: NextPage = () => {
   const [mariValue, setMariValue] = useState<number>();
   const [marketValue, setMarketValue] = useState<number>();
-  const formData = useRef<any>({});
+  const formData = useRef<any>({ mariItemCount: 95 });
 
   const formChangeHandler = (e: React.FormEvent<HTMLFormElement>) => {
     const target = e.target as HTMLInputElement;
